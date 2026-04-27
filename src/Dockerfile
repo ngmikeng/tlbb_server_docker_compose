@@ -17,7 +17,7 @@ RUN set -eux; \
 	&& cd billing_go \
 	&& make x64 useUpx=1
 
-FROM debian:buster-slim
+FROM debian:bookworm-slim
 # Debian源镜像地址
 ARG DEBIAN_MIRROR_URL=""
 WORKDIR /home
