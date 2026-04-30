@@ -155,6 +155,7 @@ echo "start Billing ......"
 /root/billing_server/billing up --log-path "${billingLogPath}" -d
 
 cd /home/tlbb/Server/ || exit 1
+export LD_LIBRARY_PATH=/home/tlbb/Server:${LD_LIBRARY_PATH}
 ulimit -n 65535
 
 ###### start ShareMemory ######
